@@ -4,7 +4,7 @@ import pandas as pd
 import random
 import statistics
 
-df  = pd.read_csv('csv files/medium_data1.csv')
+df  = pd.read_csv('medium_data1.csv')
 data = df['reading_time'].tolist()
 p_mean = statistics.mean(data)
 p_stdev = statistics.stdev(data)
@@ -31,7 +31,7 @@ Zone1_S, Zone1_E = s_mean - s_stdev, s_mean + s_stdev
 Zone2_S, Zone2_E = s_mean - s_stdev * 2, s_mean + s_stdev * 2
 Zone3_S, Zone3_E = s_mean - s_stdev * 3, s_mean + s_stdev * 3
 
-df1  = pd.read_csv('csv files/sample_2.csv')
+df1  = pd.read_csv('sample_2.csv')
 data1 = df1['reading_time'].tolist()
 d1_mean = statistics.mean(data1)
 
